@@ -70,7 +70,7 @@
             </objects>
             <point key="canvasLocation" x="915" y="197"/>
         </scene>
-        <!--Shitty Instagram Post-->
+        <!--Shitty Instagram-->
         <scene sceneID="G8e-JQ-auy">
             <objects>
                 <viewController id="ySm-rS-cjt" customClass="PhotoViewController" customModule="Photos" customModuleProvider="target" sceneMemberID="viewController">
@@ -82,11 +82,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72f-Fg-2Ji">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72f-Fg-2Ji">
                                 <rect key="frame" x="262" y="490" width="76" height="21"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZzJ-qf-tvs">
@@ -96,21 +96,21 @@
                                     <constraint firstAttribute="width" secondItem="ZzJ-qf-tvs" secondAttribute="height" multiplier="1:1" id="uyD-2b-ITg"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="♥ likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYK-ma-MB1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="♥ likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYK-ma-MB1">
                                 <rect key="frame" x="270" y="519" width="61" height="21"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Date " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePA-6K-DMo">
-                                <rect key="frame" x="118" y="81" width="364" height="21"/>
+                                <rect key="frame" x="118" y="548" width="364" height="21"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="364" id="zAe-fQ-QrJ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -126,12 +126,12 @@
                             <constraint firstItem="ZzJ-qf-tvs" firstAttribute="centerX" secondItem="x37-Hd-Rcz" secondAttribute="centerX" id="Ua2-2F-gCz"/>
                             <constraint firstItem="ZzJ-qf-tvs" firstAttribute="centerX" secondItem="x37-Hd-Rcz" secondAttribute="centerX" id="ZeH-DX-8uJ"/>
                             <constraint firstItem="ZzJ-qf-tvs" firstAttribute="centerY" secondItem="x37-Hd-Rcz" secondAttribute="centerY" id="hWT-M9-Cuu"/>
-                            <constraint firstItem="ZzJ-qf-tvs" firstAttribute="top" secondItem="ePA-6K-DMo" secondAttribute="bottom" constant="8" id="izl-NK-xlb"/>
                             <constraint firstItem="UYK-ma-MB1" firstAttribute="centerX" secondItem="x37-Hd-Rcz" secondAttribute="centerX" id="sBi-nd-WK3"/>
+                            <constraint firstItem="Amq-Gw-D3Z" firstAttribute="top" secondItem="ePA-6K-DMo" secondAttribute="bottom" constant="31" id="u0e-Hc-W61"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Shitty Instagram Post" id="ZzJ-gn-N1l">
+                    <navigationItem key="navigationItem" title="Shitty Instagram" id="ZzJ-gn-N1l">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="zR9-XS-IIr">
                             <connections>
                                 <segue destination="crY-uU-iJ9" kind="unwind" unwindAction="unwindToGrid:" id="nwg-8u-tsR"/>
