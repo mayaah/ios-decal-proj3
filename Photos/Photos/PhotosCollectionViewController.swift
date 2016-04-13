@@ -54,8 +54,8 @@ class PhotosCollectionViewController: UICollectionViewController {
         
         let screen = UIScreen.mainScreen().bounds.size;
         
-        let totalHeight: CGFloat = (screen.width / 3)
-        let totalWidth: CGFloat = (screen.width / 3)
+        let totalHeight: CGFloat = (screen.width / 2)
+        let totalWidth: CGFloat = (screen.width / 2)
 
         return CGSizeMake(totalWidth, totalHeight)
     }
