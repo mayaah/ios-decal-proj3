@@ -13,28 +13,24 @@ class Photo {
     var likes : Int!
     /* The string of the url to the photo file. */
     var url : String!
-    /* The string of the thumbnail image to the photo file. */
-    var thumbnailURL : String!
     /* The username of the photographer. */
     var username : String!
-    /* The date the photo was uploaded. */
-    var date : String!
+    
+    var createdTime : String!
+    
+    var thumbnail: String!
 
     /* Parses a NSDictionary and creates a photo object. */
     init (data: NSDictionary) {
+        //print(data)
         // FILL ME IN
         // HINT: use nested .valueForKey() calls, and then cast using 'as! TYPE'
         
-        likes = data.valueForKey("likes")?.valueForKey("count") as! Int
-        
-        url = data.valueForKey("images")?.valueForKey("standard_resolution")?.valueForKey("url") as! String
-        
-        thumbnailURL = data.valueForKey("images")?.valueForKey("thumbnail")?.valueForKey("url") as! String
-        
-        username = data.valueForKey("user")?.valueForKey("username") as! String
-        
-        date = data.valueForKey("created_time") as! String
-        
+        likes = (data.valueForKey("likes") as! NSDictionary).valueForKey("count") as! Int
+        url = ((data.valueForKey("images") as! NSDictionary).valueForKey("standard_resolution") as! NSDictionary).valueForKey("url") as! String
+        thumbnail = ((data.valueForKey("images") as! NSDictionary).valueForKey("thumbnail") as! NSDictionary).valueForKey("url") as! String
+        username = (data.valueForKey("user") as! NSDictionary).valueForKey("username") as! String
+        createdTime = data.valueForKey("created_time") as! String
     }
 
 }
